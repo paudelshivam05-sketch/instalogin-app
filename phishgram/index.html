@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<title>Instagram</title>
+<link rel="stylesheet" href="https://www.instagram.com/static/images/web/mobile-nav-sprite-2x-c8c13e9f93f1.png/2x-c8c13e9f93f1.png">
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" async></script>
+</head>
+<body>
+<div class="root">
+  <div class="content">
+    <div class="phoneWrapper">
+      <div class="phoneLoggedOut">
+        <div class="phoneLoggedOutInterior">
+          <div class="instagramDrawer">
+            <div class="instagramDrawerInterior">
+              <div class="instagramDrawerLogo">
+                <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram" draggable="false">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="formWrapper">
+      <form method="POST" action="/login" id="loginForm">
+        <div class="form">
+          <div class="formGroup">
+            <label class="formLabel" for="username">Phone number, username, or email</label>
+            <input type="text" name="username" id="username" class="formInput" required>
+          </div>
+          <div class="formGroup">
+            <label class="formLabel" for="password">Password</label>
+            <input type="password" name="password" id="password" class="formInput" required>
+          </div>
+          <button type="submit" class="formButton">Log in</button>
+        </div>
+      </form>
+      
+      <div class="orDivider">
+        <div class="orDividerCell">
+          <span class="orDividerContent">OR</span>
+        </div>
+      </div>
+      
+      <div class="facebookButton">
+        <button type="button" class="facebookButtonText">Log in with Facebook</button>
+      </div>
+      
+      <a href="#" class="passwordForgotLink">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
+<div id="loadingSpinner" style="display:none;">
+  <div class="spinner"></div>
+</div>
+</body>
+</html>
